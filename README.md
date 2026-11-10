@@ -26,9 +26,9 @@
 
 ## 文件说明
 
-- `movie-card.html` —— 自包含单文件，CSS 写在 `<style>` 标签里
+- `index.html` —— 自包含单文件，CSS 写在 `<style>` 标签里
 - `p771490367.webp` —— 海报图片，需与 html 放在同一目录
 
 ## 怎么打开
 
-双击 `movie-card.html`，用浏览器打开即可。
+双击 `index.html`，用浏览器打开即可。
