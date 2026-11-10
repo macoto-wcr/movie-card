@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影卡片</title>
+    <style>
+        /* ===== 卡片容器（外层盒子） ===== */
+        .card{
+            max-width: 550px;                              /* 宽度 */
+            padding: 20px;                             /* 内边距：内容到边框的距离 */
+            margin: 30px auto;                         /* 上下 30px，左右 auto = 水平居中 */
+            border: 1px solid #ccc;                    /* 边框 */
+            border-radius: 8px;                        /* 圆角 */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);  /* 阴影 */
+            transition: all 0.3s;                     /* 过渡动画，让变化变平滑 */
+        }
+
+        /* ===== 鼠标悬停时的悬浮效果 ===== */
+        .card:hover{
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);  /* 阴影加深 */
+            transform: translateY(-6px);                 /* 往上移动 6px */
+        }
+
+        /* ===== 海报图片 ===== */
+        .card img{
+            display: block;                           /* 变块级元素 */
+            margin: 0 auto;                           /* 水平居中 */
+            max-width: 100%;                            
+            width: 300px;
+        }
+
+        /* ===== 电影标题 ===== */
+        .card h2{
+            text-align: center;                        /* 文字居中 */
+        }
+
+        /* ===== 电影简介正文 ===== */
+        .card p{
+            text-align: justify;                       /* 两端对齐 */
+            line-height: 1.8;                          /* 行高 */
+            color: #555;                               /* 灰色文字 */
+        }
+        @media(max-width:720px){
+            .card{
+                margin:15px;
+                padding:16px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="p771490367.webp" alt="生活多美好海报">
+        <h2>生活多美好</h2>
+        <p>《生活多美好》是弗兰克·卡普拉执导，弗朗西丝·古德里奇、艾伯特·哈克特、弗兰克·卡普拉等编剧 ，詹姆斯·史都华、唐娜·里德、莱昂纳尔·巴里摩尔主演的奇幻喜剧电影，于1946年12月20日在美国纽约上映 。该片根据菲利普·范·多伦·斯特恩的短篇小说《最好的礼物》改编，讲述了主人公乔治在圣诞夜丧失了对生活的信心，准备自杀，上帝派来的天使帮他渡过危机，重新鼓起了生活的勇气的故事。2004年，该片在BBC评选的“未获奥斯卡奖的最佳影片”中名列第二。2006年，该片被美国电影学会评选为“百年百部励志电影”榜首 ；同年，在《首映杂志》评选的“影史最伟大的100次表演”榜单中，詹姆斯·史都华凭借在该片中的表演名列第八。在美国电影学会评选的“影史最有力的影片”榜单中，该片名列第一 。</p>
+    </div>
+</body>
+</html>
